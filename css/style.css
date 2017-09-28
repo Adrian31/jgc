@@ -111,21 +111,17 @@ li{
   transform: translate(0, 0);
 }
 
-#right.open2{
-  height: 100%;
-  width: 60%;
-  margin-left: 40%;
-}
-
 @media screen and (min-width: 650px){
     a#menu div{
       display: none;
     }
     #right.open2{
       width: 100%;
+      margin-left: 0;
     }
     #right{
       width: 100%;
+      margin-left: 0;
     }
 
     #left{
@@ -146,7 +142,6 @@ li{
     }
 }
 
-
 /*
 OLD CODE
 /*
@@ -158,3 +153,9 @@ OLD CODE
   background-color: #565656;
   color: white;
 }*/
+
+#right.open2{
+  height: 100%;
+  width: 60%;
+  margin-left: 40%;
+}
