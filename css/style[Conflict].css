@@ -115,8 +115,12 @@ li{
     a#menu div{
       display: none;
     }
-
+    
     #right.open2{
+      width: 100%;
+      margin-left: 0;
+    }
+    #right{
       width: 100%;
       margin-left: 0;
     }
@@ -150,7 +154,8 @@ OLD CODE
   background-color: #565656;
   color: white;
 }*/
-.open2{
+
+#right.open2{
   height: 100%;
   width: 60%;
   margin-left: 40%;
