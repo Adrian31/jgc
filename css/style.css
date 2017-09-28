@@ -28,6 +28,11 @@ body{
 #right {
   background-color: #f3f3f3;
   width: 100%;
+  -webkit-transition: width 0.3s; /* Safari */
+  transition: width 0.3s;
+  -webkit-transition: margin-left 0.3s; /* Safari */
+  transition: margin-left 0.3s;
+
 }
 .top-left {
   flex-shrink: 0;
@@ -93,17 +98,16 @@ a#menu svg{
   width: 40px;
   fill:#000;
 }
+
 #left {
-  margin-top: 13.6%;
   width: 300px;
-  height: auto;
+  height: 90%;
   position: absolute;
   -webkit-transform: translate(-300px, 0);
   transform: translate(-300px, 0);
   transition: transform 0.3s ease;
   z-index: 1000;
   box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
-  top: 0;
   font-size-adjust: 0.58;
   width: 40%;
   flex-shrink: 0;
@@ -115,28 +119,15 @@ a#menu svg{
   transform: translate(0, 0);
 }
 
+#right.open2{
+  height: 100%;
+  width: 60%;
+  margin-left: 40%;
+}
+
 @media screen and (min-width: 650px){
-
-  .hero{
-    order: -1;
-    width: 60%;
-  }
-
     a#menu svg{
       display:none;
-    }
-
-    .nav__list{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .nav__item{
-      width: 25%;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
     }
 
     #left{
@@ -155,16 +146,6 @@ a#menu svg{
       color: white;
       width: 15%;
     }
-
-    #right {
-      width: 85%;
-    }
-
-    .main{
-      width: auto;
-      flex-grow: 1;
-    }
-
 }
 
 
