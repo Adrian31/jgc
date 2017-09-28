@@ -91,11 +91,6 @@ li{
     clear:left;
 }
 
-a#menu svg{
-  width: 40px;
-  fill:#000;
-}
-
 #left {
   width: 300px;
   height: 90%;
@@ -123,8 +118,14 @@ a#menu svg{
 }
 
 @media screen and (min-width: 650px){
-    a#menu svg{
-      display:none;
+    a#menu div{
+      display: none;
+    }
+    #right.open2{
+      width: 100%;
+    }
+    #right{
+      width: 100%;
     }
 
     #left{

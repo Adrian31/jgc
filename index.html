@@ -86,11 +86,12 @@
 
       <!-- could get rid of this next div and just keep an embeded pdf viewer -->
 			<div class="top-right" style="height: 10%;">
-        <a id="menu" class="">
+        <a id="menu">
          <div class="bt-menu-trigger">
            <span></span>
          </div>
        </a>
+
 				<p class="top-right-header">Heading</p>
 			</div>
 
@@ -121,7 +122,7 @@
      /*$('#right').css('width','60%');
      $('#right').css('margin-left','40%');*/
   });
-  main.addEventListener('click', function() {
+  main.addEventListener('click', function(e) {
     drawer.classList.remove('open');
     blackboard.classList.toggle('closed');
   });
@@ -133,6 +134,8 @@ button.addEventListener('click', function (){
 button.classList.toggle('bt-menu-open');
 });
 </script>
+
+
 
 </div>
 
