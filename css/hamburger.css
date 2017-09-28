@@ -1,6 +1,6 @@
 .bt-menu-trigger {
   font-size: 30px;
-  position: relative;
+  position: absolute;
 	display: inline-block;
 	width: 2em;
 	height: 2em;
@@ -57,4 +57,30 @@
 .bt-menu-trigger.bt-menu-open span:before {
 	-webkit-transform: translateY(0.36em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
 	transform: translateY(0.35em) translateX(0.65em) rotate(-45deg) scaleX(0.6);
+}
+
+
+
+
+
+
+
+
+
+/* If you'd like to use arrows.
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }

@@ -139,6 +139,26 @@ li{
     }
 }
 
+@media screen and (max-width: 991px){
+  #navbarNav{
+    z-index: 1;
+    background-color: #f8f9fa!important;
+  }
+  ul.navbar-nav{
+    text-align: center;
+  }
+  a.nav-link{
+    position: relative;
+    border-bottom: 1px solid #A9A9A9;
+    margin-right: 0px;
+  }
+  .nav-item{
+    margin: 0;
+  }
+}
+
+
+
 /*
 OLD CODE
 /*
