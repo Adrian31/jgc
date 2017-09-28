@@ -6,6 +6,7 @@
       <title>Example</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/hamburger.css">
       <link rel="stylesheet" href="css/bootstrap-grid.min.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -85,14 +86,12 @@
 
       <!-- could get rid of this next div and just keep an embeded pdf viewer -->
 			<div class="top-right" style="height: 10%;">
+        <a id="menu" class="">
+         <div class="bt-menu-trigger">
+           <span></span>
+         </div>
+       </a>
 				<p class="top-right-header">Heading</p>
-
-
-                 <a id="menu" class="justify-content-end">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-                  </svg>
-                </a>
 			</div>
 
 			<div class="bottom">
@@ -126,6 +125,13 @@
     drawer.classList.remove('open');
     blackboard.classList.toggle('closed');
   });
+</script>
+
+<script>
+var button = document.querySelector('.bt-menu-trigger');
+button.addEventListener('click', function (){
+button.classList.toggle('bt-menu-open');
+});
 </script>
 
 </div>
