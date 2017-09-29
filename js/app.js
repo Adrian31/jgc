@@ -21,8 +21,8 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-window.onload = function() {
+/*window.onload = function() {
 document.getElementById("showPDF").onclick = function() {
     document.getElementById("thePDF").style.visibility = "visible";
 }
-}
+}*/
