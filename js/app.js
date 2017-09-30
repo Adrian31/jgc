@@ -1,10 +1,6 @@
 //Empty
 $bottom = $('.bottom');
 
-
-
-
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -20,6 +16,10 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
+$( function() {
+   $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+   $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+ } );
 
 /*window.onload = function() {
 document.getElementById("showPDF").onclick = function() {
