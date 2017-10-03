@@ -12,6 +12,9 @@ body{
 #navbarNav{
   float: right;
 }
+.navbar{
+  height: 15% !important;
+}
 .test {
   height: 85%;
   overflow: hidden;
@@ -24,7 +27,9 @@ body{
   display: flex;
   flex-direction: column;
 }
-
+#logo{
+  display: none;
+}
 #right {
   background-color: #f3f3f3;
   width: 100%;
@@ -115,7 +120,7 @@ li{
 
 a{
   padding: 10px;
-  text-decoration: none !important;
+
 }
 /*
 OLD CODE
@@ -184,7 +189,7 @@ a.accordion {
     text-align: left;
     outline: none;
     font-size: 15px;
-    transition: 0.4s;
+    transition: 1s !important;
     display: block;
     float:left;
     clear:left;
@@ -213,7 +218,16 @@ ul.accordion-list{
   padding: 10px;
 }
 
-
+@media screen and (min-height: 749px){
+  .navbar-brand{
+    display: inline-block !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #logo{
+    display: block;
+  }
+}
 @media screen and (min-width: 650px){
     a#menu div{
       display: none;
