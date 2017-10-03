@@ -218,7 +218,7 @@ ul.accordion-list{
   padding: 10px;
 }
 
-@media screen and (min-height: 749px){
+@media screen and (min-height: 500px){
   .navbar-brand{
     display: inline-block !important;
     width: 100px !important;
@@ -226,6 +226,7 @@ ul.accordion-list{
   }
   #logo{
     display: block;
+    z-index: -1;
   }
 }
 @media screen and (min-width: 650px){
